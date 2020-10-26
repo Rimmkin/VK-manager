@@ -7,6 +7,7 @@ public class Post {
     private int numberOfWatched;
     private String date;
     private String nameOfPublic;
+    private PostSource postSource;
     public boolean pinned;
     private boolean favorite;
 
@@ -56,6 +57,14 @@ public class Post {
 
     public void setNameOfPublic(String nameOfPublic) {
         this.nameOfPublic = nameOfPublic;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
     }
 
     public boolean isPinned() {
